@@ -45,36 +45,36 @@ class _HomeScreenState extends State<HomeScreen> {
                   "Route",
                   style: TextStyle(color: Colors.white),
                 )),
-            // ElevatedButton(
-            //     style: ElevatedButton.styleFrom(backgroundColor: Colors.teal),
-            //     onPressed: () {
-            //       Get.bottomSheet(
-            //           Container(
-            //         child: Wrap(
-            //           children: [
-            //             ListTile(
-            //             title: Text("Light theme"),
-            //             leading: Icon(Icons.sunny),
-            //             onTap: () => {
-            //               Get.changeTheme(ThemeData.light())
-            //             },
-            //           ),
-            //             ListTile(
-            //               title: Text("Dark theme"),
-            //               leading: Icon(Icons.mood),
-            //               onTap: () => {
-            //
-            //                 Get.changeTheme(ThemeData.dark()),
-            //               },
-            //             ),
-            //           ],
-            //         ),
-            //       ));
-            //     },
-            //     child: const Text(
-            //       "Bottom bar",
-            //       style: TextStyle(color: Colors.white),
-            //     )),
+            ElevatedButton(
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.teal),
+                onPressed: () {
+                  Get.bottomSheet(
+                      Container(
+                    child: Wrap(
+                      children: [
+                        ListTile(
+                        title: Text("Light theme"),
+                        leading: Icon(Icons.sunny),
+                        onTap: () => {
+                          Get.changeTheme(ThemeData.light())
+                        },
+                      ),
+                        ListTile(
+                          title: Text("Dark theme"),
+                          leading: Icon(Icons.mood),
+                          onTap: () => {
+
+                            Get.changeTheme(ThemeData.dark()),
+                          },
+                        ),
+                      ],
+                    ),
+                  ));
+                },
+                child: const Text(
+                  "Bottom bar",
+                  style: TextStyle(color: Colors.white),
+                )),
           ],
         ),
       ),
